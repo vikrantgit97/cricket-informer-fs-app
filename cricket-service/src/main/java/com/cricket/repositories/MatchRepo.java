@@ -9,4 +9,6 @@ public interface MatchRepo extends JpaRepository<Match,Integer> {
 
     Optional<Match> findByTeamHeading(String teamHeading);
 
+    Optional<Match> findByMatchNumberVenue(String matchNumberVenue);
+
 }

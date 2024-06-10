@@ -1,0 +1,431 @@
+###
+GET http://localhost:8080/cricket/point-table
+
+###
+HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 10 Jun 2024 17:52:52 GMT
+
+[
+  [
+    "Teams",
+    "Mat",
+    "Won",
+    "Lost",
+    "Tied",
+    "NR",
+    "Pts",
+    "NRR",
+    ""
+  ],
+  [
+    "India (Q)",
+    "9",
+    "9",
+    "0",
+    "0",
+    "0",
+    "18",
+    "+2.570",
+    ""
+  ],
+  [
+    "South Africa (Q)",
+    "9",
+    "7",
+    "2",
+    "0",
+    "0",
+    "14",
+    "+1.261",
+    ""
+  ],
+  [
+    "Australia (Q)",
+    "9",
+    "7",
+    "2",
+    "0",
+    "0",
+    "14",
+    "+0.841",
+    ""
+  ],
+  [
+    "New Zealand (Q)",
+    "9",
+    "5",
+    "4",
+    "0",
+    "0",
+    "10",
+    "+0.743",
+    ""
+  ],
+  [
+    "Pakistan (E)",
+    "9",
+    "4",
+    "5",
+    "0",
+    "0",
+    "8",
+    "-0.199",
+    ""
+  ],
+  [
+    "Afghanistan (E)",
+    "9",
+    "4",
+    "5",
+    "0",
+    "0",
+    "8",
+    "-0.336",
+    ""
+  ],
+  [
+    "England (E)",
+    "9",
+    "3",
+    "6",
+    "0",
+    "0",
+    "6",
+    "-0.572",
+    ""
+  ],
+  [
+    "Bangladesh (E)",
+    "9",
+    "2",
+    "7",
+    "0",
+    "0",
+    "4",
+    "-1.087",
+    ""
+  ],
+  [
+    "Sri Lanka (E)",
+    "9",
+    "2",
+    "7",
+    "0",
+    "0",
+    "4",
+    "-1.419",
+    ""
+  ],
+  [
+    "Netherlands (E)",
+    "9",
+    "2",
+    "7",
+    "0",
+    "0",
+    "4",
+    "-1.825",
+    ""
+  ]
+]
+
+###
+GET http://localhost:8080/cricket/live
+
+###
+HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 10 Jun 2024 17:53:12 GMT
+
+[
+  {
+    "matchId": 14,
+    "teamHeading": "South Africa vs Bangladesh,",
+    "matchNumberVenue": "21st Match, Group D Today  •  at New York, Nassau County International Cricket Stadium",
+    "battingTeam": "BAN",
+    "battingTeamScore": "94-4 (17 Ovs)",
+    "bowlTeam": "RSA",
+    "bowlTeamScore": "113-6 (20 Ovs)",
+    "liveText": "Bangladesh need 20 runs in 18 balls",
+    "matchLink": "/live-cricket-scores/87640/rsa-vs-ban-21st-match-group-d-icc-mens-t20-world-cup-2024",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-10T17:53:12.574+00:00"
+  },
+  {
+    "matchId": 15,
+    "teamHeading": "Romania vs Portugal,",
+    "matchNumberVenue": "7th Match, Group B Today  •  at Rome, Roma Cricket Ground Portugal opt to bat ",
+    "battingTeam": "",
+    "battingTeamScore": "",
+    "bowlTeam": "",
+    "bowlTeamScore": "",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-10T17:53:12.743+00:00"
+  },
+  {
+    "matchId": 16,
+    "teamHeading": "France vs Italy,",
+    "matchNumberVenue": "8th Match, Group A Today  •  at Rome, Simar Cricket Ground Italy opt to bowl ",
+    "battingTeam": "",
+    "battingTeamScore": "",
+    "bowlTeam": "",
+    "bowlTeamScore": "",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-10T17:53:12.756+00:00"
+  }
+]
+
+###
+GET http://localhost:8080/cricket
+
+###
+HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 10 Jun 2024 17:53:40 GMT
+
+[
+  {
+    "matchId": 1,
+    "teamHeading": "Oman vs Scotland,",
+    "matchNumberVenue": "20th Match, Group B Today  •  at North Sound, Antigua, Sir Vivian Richards Stadium",
+    "battingTeam": "OMAN",
+    "battingTeamScore": "67-3 (8.1 Ovs)",
+    "bowlTeam": "SCO",
+    "bowlTeamScore": "",
+    "liveText": "Oman opt to bat",
+    "matchLink": "/live-cricket-scores/87633/oman-vs-sco-20th-match-group-b-icc-mens-t20-world-cup-2024",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-09T17:41:37.181+00:00"
+  },
+  {
+    "matchId": 2,
+    "teamHeading": "India vs Pakistan,",
+    "matchNumberVenue": "19th Match, Group A Today  •  at New York, Nassau County International Cricket Stadium",
+    "battingTeam": "IND",
+    "battingTeamScore": "119-9 (18.5 Ovs)",
+    "bowlTeam": "PAK",
+    "bowlTeamScore": "",
+    "liveText": "Pakistan opt to bowl",
+    "matchLink": "/live-cricket-scores/87626/ind-vs-pak-19th-match-group-a-icc-mens-t20-world-cup-2024",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-09T17:41:37.150+00:00"
+  },
+  {
+    "matchId": 3,
+    "teamHeading": "Isle of Man vs France,",
+    "matchNumberVenue": "3rd Match, Group A Today  •  at Rome, Roma Cricket Ground Isle of Man opt to bowl ",
+    "battingTeam": "",
+    "battingTeamScore": "",
+    "bowlTeam": "",
+    "bowlTeamScore": "",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-09T17:41:37.226+00:00"
+  },
+  {
+    "matchId": 4,
+    "teamHeading": "Austria vs Romania,",
+    "matchNumberVenue": "4th Match, Group B Today  •  at Rome, Simar Cricket Ground Austria opt to bat ",
+    "battingTeam": "",
+    "battingTeamScore": "",
+    "bowlTeam": "",
+    "bowlTeamScore": "",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-09T17:41:37.204+00:00"
+  },
+  {
+    "matchId": 5,
+    "teamHeading": "Italy vs Luxembourg,",
+    "matchNumberVenue": "1st Match, Group A Today  •  at Rome, Roma Cricket Ground",
+    "battingTeam": "ITA",
+    "battingTeamScore": "166-7 (20 Ovs)",
+    "bowlTeam": "LUX",
+    "bowlTeamScore": "89-9 (20 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Italy won by 77 runs",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.247+00:00"
+  },
+  {
+    "matchId": 6,
+    "teamHeading": "Portugal vs Hungary,",
+    "matchNumberVenue": "2nd Match, Group B Today  •  at Rome, Simar Cricket Ground",
+    "battingTeam": "PORT",
+    "battingTeamScore": "147-9 (20 Ovs)",
+    "bowlTeam": "HUN",
+    "bowlTeamScore": "132-5 (20 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Portugal won by 15 runs",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.275+00:00"
+  },
+  {
+    "matchId": 7,
+    "teamHeading": "Kent vs Middlesex,",
+    "matchNumberVenue": "South Group Today  •  at Canterbury, St Lawrence Ground",
+    "battingTeam": "MDX",
+    "battingTeamScore": "178-6 (19.2 Ovs)",
+    "bowlTeam": "KENT",
+    "bowlTeamScore": "173-8 (20 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Middlesex won by 4 wkts",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.296+00:00"
+  },
+  {
+    "matchId": 8,
+    "teamHeading": "Derbyshire vs Yorkshire,",
+    "matchNumberVenue": "North Group Today  •  at Leeds, Headingley",
+    "battingTeam": "YORK..",
+    "battingTeamScore": "182-1 (18.1 Ovs)",
+    "bowlTeam": "DERB..",
+    "bowlTeamScore": "179-6 (20 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Yorkshire won by 9 wkts",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.317+00:00"
+  },
+  {
+    "matchId": 9,
+    "teamHeading": "Leicestershire vs Worcestershire,",
+    "matchNumberVenue": "North Group Today  •  at Leicester, Grace Road",
+    "battingTeam": "LEIC",
+    "battingTeamScore": "176-8 (20 Ovs)",
+    "bowlTeam": "WORC..",
+    "bowlTeamScore": "172-6 (20 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Leicestershire won by 4 runs",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.396+00:00"
+  },
+  {
+    "matchId": 10,
+    "teamHeading": "Sussex vs Gloucestershire,",
+    "matchNumberVenue": "South Group Today  •  at Bristol, County Ground",
+    "battingTeam": "SUS",
+    "battingTeamScore": "208-6 (20 Ovs)",
+    "bowlTeam": "GLOU..",
+    "bowlTeamScore": "160-8 (20 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Sussex won by 48 runs",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.414+00:00"
+  },
+  {
+    "matchId": 11,
+    "teamHeading": "Somerset vs Hampshire,",
+    "matchNumberVenue": "South Group Today  •  at Taunton, The Cooper Associates County Ground",
+    "battingTeam": "SOM",
+    "battingTeamScore": "241-5 (20 Ovs)",
+    "bowlTeam": "HAM",
+    "bowlTeamScore": "178 (19.3 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Somerset won by 63 runs",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.343+00:00"
+  },
+  {
+    "matchId": 12,
+    "teamHeading": "Nottinghamshire vs Lancashire,",
+    "matchNumberVenue": "North Group Today  •  at Nottingham, Trent Bridge",
+    "battingTeam": "LANC..",
+    "battingTeamScore": "155-4 (18.3 Ovs)",
+    "bowlTeam": "NOTT..",
+    "bowlTeamScore": "153-8 (20 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Lancashire won by 6 wkts",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.372+00:00"
+  },
+  {
+    "matchId": 13,
+    "teamHeading": "Austria Women vs Czech Republic Women,",
+    "matchNumberVenue": "3rd T20I Today  •  at Seebarn, Seebarn Cricket Ground",
+    "battingTeam": "AUTW",
+    "battingTeamScore": "161-8 (20 Ovs)",
+    "bowlTeam": "CZEW",
+    "bowlTeamScore": "55-7 (20 Ovs)",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "Austria Women won by 106 runs",
+    "status": "COMPLETED",
+    "date": "2024-06-09T17:41:37.435+00:00"
+  },
+  {
+    "matchId": 14,
+    "teamHeading": "South Africa vs Bangladesh,",
+    "matchNumberVenue": "21st Match, Group D Today  •  at New York, Nassau County International Cricket Stadium",
+    "battingTeam": "BAN",
+    "battingTeamScore": "94-4 (17 Ovs)",
+    "bowlTeam": "RSA",
+    "bowlTeamScore": "113-6 (20 Ovs)",
+    "liveText": "Bangladesh need 20 runs in 18 balls",
+    "matchLink": "/live-cricket-scores/87640/rsa-vs-ban-21st-match-group-d-icc-mens-t20-world-cup-2024",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-10T17:53:12.574+00:00"
+  },
+  {
+    "matchId": 15,
+    "teamHeading": "Romania vs Portugal,",
+    "matchNumberVenue": "7th Match, Group B Today  •  at Rome, Roma Cricket Ground Portugal opt to bat ",
+    "battingTeam": "",
+    "battingTeamScore": "",
+    "bowlTeam": "",
+    "bowlTeamScore": "",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-10T17:53:12.743+00:00"
+  },
+  {
+    "matchId": 16,
+    "teamHeading": "France vs Italy,",
+    "matchNumberVenue": "8th Match, Group A Today  •  at Rome, Simar Cricket Ground Italy opt to bowl ",
+    "battingTeam": "",
+    "battingTeamScore": "",
+    "bowlTeam": "",
+    "bowlTeamScore": "",
+    "liveText": "",
+    "matchLink": "",
+    "textComplete": "",
+    "status": "LIVE",
+    "date": "2024-06-10T17:53:12.756+00:00"
+  }
+]

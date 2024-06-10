@@ -10,11 +10,11 @@ import {ApiService} from '../../services/api.service';
   styleUrl: './point-table.component.css',
 })
 export class PointTableComponent implements OnInit {
+
   pointTable: any;
   pointTableRow: any
 
-  constructor(private _api: ApiService) {
-  }
+  constructor(private _api: ApiService) {}
 
   ngOnInit(): void {
     this.loadTable();
