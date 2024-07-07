@@ -1,0 +1,29 @@
+prerequisites
+
+install tailwind css
+    reference- https://tailwindcss.com/docs/guides/angular
+    steps are already given in the link
+    1) npm install -D tailwindcss postcss autoprefixer
+    2) npx tailwindcss init
+
+
+    after running above commands
+    paste in tailwind.config.js
+
+    /** @type {import('tailwindcss').Config} */
+    module.exports = {
+      content: [
+        "./src/**/*.{html,ts}",
+      ],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
+
+
+    paste in styles.css
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
